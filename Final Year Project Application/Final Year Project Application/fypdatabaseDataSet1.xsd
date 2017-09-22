@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fypdatabaseDataSet1" targetNamespace="http://tempuri.org/fypdatabaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/fypdatabaseDataSet1.xsd" xmlns="http://tempuri.org/fypdatabaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fypdatabaseConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fypdatabaseConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Final_Year_Project_Application.Properties.Settings.GlobalReference.Default.fypdatabaseConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblbookingsTableAdapter" GeneratorDataComponentClassName="tblbookingsTableAdapter" Name="tblbookings" UserDataComponentName="tblbookingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tblbookings" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idBookings`, `idComputer`, `idTimeSlot`, `Status` FROM `tblbookings`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblcomputersTableAdapter" GeneratorDataComponentClassName="tblcomputersTableAdapter" Name="tblcomputers" UserDataComponentName="tblcomputersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tblcomputers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idComputer`, `idLab` FROM `tblcomputers`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbllabsTableAdapter" GeneratorDataComponentClassName="tbllabsTableAdapter" Name="tbllabs" UserDataComponentName="tbllabsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tbllabs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idLab`, `Lab Room Number`, `Number of Computers` FROM `tbllabs`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblmodulesTableAdapter" GeneratorDataComponentClassName="tblmodulesTableAdapter" Name="tblmodules" UserDataComponentName="tblmodulesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tblmodules" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idModules`, `Modules`, `Number of Students`, `Level` FROM `tblmodules`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbltimeslotsTableAdapter" GeneratorDataComponentClassName="tbltimeslotsTableAdapter" Name="tbltimeslots" UserDataComponentName="tbltimeslotsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tbltimeslots" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idtimeslot`, `Time Slot`, `Week` FROM `tbltimeslots`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Table1TableAdapter" GeneratorDataComponentClassName="Table1TableAdapter" Name="Table1" UserDataComponentName="Table1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fypdatabaseConnectionString1 (Settings)" DbObjectName="fypdatabase.tblbookings" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idBookings`, `idComputer`, `idTimeSlot`, `Status` FROM `tblbookings`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fypdatabaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fypdatabaseDataSet1" msprop:Generator_UserDSName="fypdatabaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblbookings" msprop:Generator_TableClassName="tblbookingsDataTable" msprop:Generator_TableVarName="tabletblbookings" msprop:Generator_RowChangedName="tblbookingsRowChanged" msprop:Generator_TablePropName="tblbookings" msprop:Generator_RowDeletingName="tblbookingsRowDeleting" msprop:Generator_RowChangingName="tblbookingsRowChanging" msprop:Generator_RowEvHandlerName="tblbookingsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblbookingsRowDeleted" msprop:Generator_RowClassName="tblbookingsRow" msprop:Generator_UserTableName="tblbookings" msprop:Generator_RowEvArgName="tblbookingsRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblcomputers" msprop:Generator_TableClassName="tblcomputersDataTable" msprop:Generator_TableVarName="tabletblcomputers" msprop:Generator_RowChangedName="tblcomputersRowChanged" msprop:Generator_TablePropName="tblcomputers" msprop:Generator_RowDeletingName="tblcomputersRowDeleting" msprop:Generator_RowChangingName="tblcomputersRowChanging" msprop:Generator_RowEvHandlerName="tblcomputersRowChangeEventHandler" msprop:Generator_RowDeletedName="tblcomputersRowDeleted" msprop:Generator_RowClassName="tblcomputersRow" msprop:Generator_UserTableName="tblcomputers" msprop:Generator_RowEvArgName="tblcomputersRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbllabs" msprop:Generator_TableClassName="tbllabsDataTable" msprop:Generator_TableVarName="tabletbllabs" msprop:Generator_RowChangedName="tbllabsRowChanged" msprop:Generator_TablePropName="tbllabs" msprop:Generator_RowDeletingName="tbllabsRowDeleting" msprop:Generator_RowChangingName="tbllabsRowChanging" msprop:Generator_RowEvHandlerName="tbllabsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbllabsRowDeleted" msprop:Generator_RowClassName="tbllabsRow" msprop:Generator_UserTableName="tbllabs" msprop:Generator_RowEvArgName="tbllabsRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblmodules" msprop:Generator_TableClassName="tblmodulesDataTable" msprop:Generator_TableVarName="tabletblmodules" msprop:Generator_RowChangedName="tblmodulesRowChanged" msprop:Generator_TablePropName="tblmodules" msprop:Generator_RowDeletingName="tblmodulesRowDeleting" msprop:Generator_RowChangingName="tblmodulesRowChanging" msprop:Generator_RowEvHandlerName="tblmodulesRowChangeEventHandler" msprop:Generator_RowDeletedName="tblmodulesRowDeleted" msprop:Generator_RowClassName="tblmodulesRow" msprop:Generator_UserTableName="tblmodules" msprop:Generator_RowEvArgName="tblmodulesRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbltimeslots" msprop:Generator_TableClassName="tbltimeslotsDataTable" msprop:Generator_TableVarName="tabletbltimeslots" msprop:Generator_RowChangedName="tbltimeslotsRowChanged" msprop:Generator_TablePropName="tbltimeslots" msprop:Generator_RowDeletingName="tbltimeslotsRowDeleting" msprop:Generator_RowChangingName="tbltimeslotsRowChanging" msprop:Generator_RowEvHandlerName="tbltimeslotsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbltimeslotsRowDeleted" msprop:Generator_RowClassName="tbltimeslotsRow" msprop:Generator_UserTableName="tbltimeslots" msprop:Generator_RowEvArgName="tbltimeslotsRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1" msprop:Generator_TableClassName="Table1DataTable" msprop:Generator_TableVarName="tableTable1" msprop:Generator_TablePropName="Table1" msprop:Generator_RowDeletingName="Table1RowDeleting" msprop:Generator_RowChangingName="Table1RowChanging" msprop:Generator_RowEvHandlerName="Table1RowChangeEventHandler" msprop:Generator_RowDeletedName="Table1RowDeleted" msprop:Generator_UserTableName="Table1" msprop:Generator_RowChangedName="Table1RowChanged" msprop:Generator_RowEvArgName="Table1RowChangeEvent" msprop:Generator_RowClassName="Table1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
